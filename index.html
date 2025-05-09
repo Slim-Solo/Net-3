@@ -11,27 +11,49 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Coming soon" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link rel="stylesheet" href="./css/coming-soon.css">
+    <link rel="stylesheet" href="./css/pages/coming-soon.css">
+    <link rel="stylesheet" href="./css/components/layout.css">
+    <link rel="stylesheet" href="./css/components/clock.css">
+    <link rel="stylesheet" href="./css/components/mouse.css">
 </head>
 
 <body>
     <header class="container bg-blue">
         <div class="row-short">
             <img class="logo" src="./img/logo.png" alt="Logo">
-            <h1>Coming soon</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde necessitatibus nulla debitis suscipit quae dignissimos aspernatur, fuga ab perferendis?</p>
+            <h1 class="main-title">Coming soon</h1>
+            <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde necessitatibus nulla debitis suscipit quae dignissimos aspernatur, fuga ab perferendis?</p>
+            <div class="clock">
+                <div class="time">
+                    <div class="value">328</div>
+                    <div class="label">Days</div>
+                </div>
+                <div class="time">
+                    <div class="value">09</div>
+                    <div class="label">Hours</div>
+                </div>
+                <div class="time">
+                    <div class="value">37</div>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="time">
+                    <div class="value">39</div>
+                    <div class="label">Seconds</div>
+                </div>
+            </div>
+            <div class="mouse"></div>
         </div>
     </header>
 
     <main class="container">
         <div class="row">
             <div class="column">
-                <h2>About startup</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias tenetur qui repellendus maxime, aliquid possimus id quisquam amet iusto reiciendis, <a href="#">Matrox</a> consequuntur dolor corrupti exercitationem consectetur hic sequi!</p>
+                <h2 class="section-title">About startup</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias tenetur qui repellendus maxime, aliquid possimus id quisquam amet iusto reiciendis, <a href="#">Matrox</a> consequuntur dolor corrupti exercitationem consectetur hic sequi!</p>
             </div>
             <div class="column">
-                <h2>Have any question?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae vel at corrupti architecto <a href="mailto:mano@pastas.lt">mano@pastas.lt</a> totam neque cupiditate nesciunt suscipit animi consequatur, ducimus quo, molestias quae?</p>
+                <h2 class="section-title">Have any question?</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae vel at corrupti architecto <a href="mailto:mano@pastas.lt">mano@pastas.lt</a> totam neque cupiditate nesciunt suscipit animi consequatur, ducimus quo, molestias quae?</p>
             </div>
         </div>
     </main>
