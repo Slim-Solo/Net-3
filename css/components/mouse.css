@@ -1,0 +1,17 @@
+.mouse {
+  font-size: 13px;
+  width: 2em;
+  height: 3em;
+  border: 0.3em solid #fff;
+  border-radius: 1em;
+}
+.mouse::after {
+  content: '';
+  display: block;
+  width: 0.3em;
+  height: 0.5em;
+  margin-left: 0.55em;
+  margin-top: 0.5em;
+  background-color: #fff;
+  border-radius: 0.15em;
+}
