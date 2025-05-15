@@ -1,0 +1,37 @@
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.progress-bar .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+.progress-bar .bottom {
+  background-color: #ccc;
+  height: 0.5rem;
+}
+.progress-bar .bar {
+  height: 100%;
+  width: 60%;
+}
+.progress-bar .value {
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 100%;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

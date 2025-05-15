@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-blue {
+  background-color: var(--color-primary);
+}
+
+.hero {
+  background-image: url(../../img/hero-small.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.main-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-description {
+  font-size: 22px;
+  color: #ccc;
+}
+
+.hero .form-row {
+  justify-content: center;
+}
+.hero label {
+  color: #fff;
+}
+.hero input {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.hero ::placeholder {
+  color: #fff;
+}
+
+.section-title {
+  font-size: 25px;
+  color: #000;
+}
+
+.section-description {
+  font-size: 17px;
+  line-height: 25px;
+  color: #555;
+}
+.section-description > a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+footer {
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: #ffffffcd;
+}
+
+.logo-white {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+footer a {
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #fff;
+}
+.socials a {
+  display: inline-block;
+  width: 2.6rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #fff0;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s;
+}
+.socials a:hover {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+.text-trio {
+  display: flex;
+  gap: 0 30px;
+}
+.text-trio p {
+  position: relative;
+}
+.text-trio p::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translate(50%, -50%);
+}
+.text-trio p:last-child::after {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-trio {
+    flex-direction: column;
+  }
+
+  .text-trio p::after {
+    display: none;
+  }
+}
+
+footer .row {
+  position: relative;
+}
+.back-to-top {
+  font-size: 1.8rem;
+  line-height: 1.8em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  text-decoration: none;
+  position: absolute;
+  top: -1em;
+  right: -0.7em;
+  background-color: var(--color-secondary);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
